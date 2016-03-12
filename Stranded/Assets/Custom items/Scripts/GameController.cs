@@ -4,6 +4,7 @@ using UnityEngine.UI;
 
 public class GameController : MonoBehaviour 
 {
+    // Some variables forthe different parts to pick up
     public int metalScore = 0;
     public int fuelScore = 0;
 
@@ -21,6 +22,7 @@ public class GameController : MonoBehaviour
 	
     public void Update()
     {
+            // this part of the code updates the amount of fuel and parts collected during every update
             MetalParts.text = "Metal Parts: " + metalScore + "/100";
             Fuel.text = "Fuel: " + fuelScore + "/50";
     }
